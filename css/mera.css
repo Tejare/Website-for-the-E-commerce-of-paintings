@@ -1,0 +1,35 @@
+
+.wrapper
+{
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.slider
+{
+  width:1000px;
+  height: 1000px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,2);
+  animation: slideshow 8s linear infinite;
+}
+.slide1
+{
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.slide1 img {
+  height: 100px;
+  padding: 0 30px 0 30px;
+}
+
+@@keyframes  slideshow{
+  0% {transform:translateX(0);
+  100% {translateX(-100%);}
+
+}
